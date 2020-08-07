@@ -263,10 +263,11 @@ a#mobile_menu {
   max-width: 568px;
   width: 100%;
 }
+/*这里调节主页季节那几个图片的位置*/
 .tm-about-img {
-  left: 0;
+  left: 160px;
   position: absolute;
-  top: 0;
+  top: 50px;
   z-index: -100;
 }
 

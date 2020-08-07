@@ -53,9 +53,9 @@ body {
 .w3l-left-side {
     flex-basis: 500px;
 	min-height: 500px;
-	background: rgba(16, 16, 16, 0.73);
+	background: white(16, 16, 16, 0.73);
 	box-sizing:	border-box;
-	border: 20px solid #e9ecef;
+
 }
 /*-- Slider range --*/
 .filter-price {
@@ -105,7 +105,7 @@ ul.dropdown-menu6 li a {
 /*-- //Slider range --*/
 .w3l-rigt-side {
 	flex-basis: 500px;
-    background: url(../截图.PNG)0  0  no-repeat;
+    background: url(../32y.gif)0  0  no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
 	box-sizing:	border-box;

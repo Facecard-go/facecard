@@ -7,7 +7,7 @@ function  checkName() {
     //alert(uname.value)
     //alert(uname)
     //用户名格式进行校验  var reg=/^[0-9]{8}$/;   /*定义验证表达式*/  return reg.test(str);     /*进行验证*/
-    var reg=/^[A-Za-z0-9]{6,}$/;
+    var reg=/^[A-Za-z0-9]{6,12}$/;
     var result = reg.test(uname);
     //alert(result)
     span = document.getElementById("usid");
@@ -43,7 +43,7 @@ function  checkPwd() {
     if (result == true) {
         span.innerHTML = "<font color='green'>密码格式正确</font>";
         upwd_flag = true;
-        window.location.href="zhuye3.html";
+        window.location.href="personal.html";
     } else {
         span.innerHTML = "<font color='red'>密码长度至少是6位</font>";
         upwd_flag = false;
