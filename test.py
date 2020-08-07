@@ -11,7 +11,7 @@ conn = pymysql.connect( host='139.219.8.186',
 
 cursor = conn.cursor() # Locate the Cursor, all that was required was for buffered to be set to true
 #获得表中有多少条数据
-cursor.execute("insert into myuser(uname,email,password1,password2)values()")
+cursor.execute("insert into myuser(uname,email,password1,password2)values('Ruxinru','1594563@qq.com','159485','159485')")
 print('ok')
 sqlcom="select * from myuser" # SQL command
 aa=cursor.execute(sqlcom) # Execute the command

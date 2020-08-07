@@ -3877,6 +3877,7 @@ ul.cat li a:hover {
 
 /* 12. breadcrumb */
 .breadcrumb-text {
+
   position: relative;
   z-index: 1; }
 
@@ -3891,9 +3892,48 @@ ul.cat li a:hover {
   display: inline-block;
   position: relative;
   padding: 0 20px; }
+/*春夏秋冬季节的背景图*/
+#spring{
+        background: url(../春天.jpg) no-repeat center bottom;
+        height: 100%;
+        width: 100%;
+        top:0;
+        left:0;
+        background-size: 100% 100%  ;
+        background-position: center top;
 
+}
+#summer{
+        background: url(../夏季.jpg) no-repeat center bottom;
+        height: 100%;
+        width: 100%;
+        top:0;
+        left:0;
+        background-size: 100% 100%  ;
+        background-position: center top;
+}
+#autumn{
+        background: url(../秋季.jpg) no-repeat center bottom;
+        height: 100%;
+        width: 100%;
+        top:0;
+        left:0;
+        background-size: 100% 100%  ;
+        background-position: center top;
+
+}
+#winter{
+        background: url(../冬季.jpg) no-repeat center bottom;
+        height: 100%;
+        width: 100%;
+        top:0;
+        left:0;
+        background-size: 100% 100%  ;
+        background-position: center top;
+
+}
 .breadcrumb-menu li a {
-  color: #aeacac;
+  /*color: #aeacac;*/
   font-size: 18px;
   font-weight: 400;
   text-transform: capitalize;
