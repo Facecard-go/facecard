@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册界面</title>
+    <script src="../static/js/jquery.min.js"></script>
+    <script  src="../static/js/register.js"></script>
+    <style>
+body{
+    background-image:url('../static/背景5.jpg');
+}
+</style>
+<link rel="stylesheet" type="text/css" href="../static/css/register.css"/>
+<script type="text/javascript" src="../static/js/register.js"></script>
+</head>
+
+<body>
+    <div align="center">
+        <div id="register_frame">
+            <p id="image_logo"><img src="../static/LOGO(kou).png" width="250" height="100"></p>
+                <form action="registe" method="get">
+                    <p><label class="label_input">用户名</label><input type="text" id="uname" name="uname" class="text_field" placeholder = "请输入至少六位英文数字组合" onblur="checkName()" /></p>
+                    <span id="usid"></span>
+                    <p><label class="label_input">密码</label><input type="password" id="upwd" name="upwd" class="text_field" placeholder = "请输入长度至少为六位的英文数字组合" onblur="checkPwd()" /></p>
+                    <span id="sid"></span>
+                    <div id="register_control">
+                        <input type="submit" id="btn_register" value="注册" onclick="register();"/>
+                    </div>
+                </form>
+        </div>
+
+    </div>>
+</body>>
+</html>
+
+<!--div align="center">
+     <h1>登录</h1>
+
+     <form action="doLogin" method="post">
+         用户名称：<input type="text" name ="uname" ><br>
+         用户密码：<input type="password" name="upwd"><br>
+         <input type="submit" value="登录">
+         <input type="reset"  value="重置">
+
+     </form>
+
+ </div>
+-->

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/camera-detect-face-master.iml" filepath="$PROJECT_DIR$/.idea/camera-detect-face-master.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/untitled.iml" filepath="$PROJECT_DIR$/.idea/untitled.iml" />
+>>>>>>> 749d4844e2c809da6ff642c30ecad569a3ced7ee
     </modules>
   </component>
 </project>
