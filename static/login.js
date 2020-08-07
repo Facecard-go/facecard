@@ -45,7 +45,7 @@ function  checkPwd() {
     if (result == true) {
         span.innerHTML = "<font color='green'>密码格式正确</font>";
         upwd_flag = true;
-        window.location.href="../new_wangye/zhuye3.html";
+        window.location.href="../new_wangye/personal.html";
     } else {
         span.innerHTML = "<font color='red'>密码长度至少是6位</font>";
         upwd_flag = false;

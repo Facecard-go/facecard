@@ -10,6 +10,9 @@
         width: 100%;
         margin: auto;
     }
+
+
+
 }
 
 
@@ -256,7 +259,7 @@
         padding: 20px 0 5px;
     }
     .slider-content h1 {
-        font-size: 100px;
+        font-size: 34px;
     }
     .banner-inner h2 {
         font-size: 25px;

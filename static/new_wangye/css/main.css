@@ -1948,7 +1948,7 @@ ul.minicart .cart-price span {
 .main-menu nav > ul > li > a {
   color: #222;
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   padding: 40px 0;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -3146,7 +3146,7 @@ img.secondary-img {
 
 .widget-title {
   font-size: 21px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   position: relative;
   display: inline-block;
   font-weight: 500; }
