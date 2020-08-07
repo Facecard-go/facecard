@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6 (work)" project-jdk-type="Python SDK" />
 =======
+=======
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="JSX" />
+  </component>
+>>>>>>> f195206bb83627ab99f0053a4cd14489140ef526
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.6 (untitled)" project-jdk-type="Python SDK" />
 >>>>>>> 749d4844e2c809da6ff642c30ecad569a3ced7ee
 </project>

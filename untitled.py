@@ -19,6 +19,7 @@ app.secret_key="13943662109"
 # 导入MySQL驱动
 @app.route("/zhuce" ,methods=["GET"])
 def zhuce():
+    print("hello_zhuce")
 # 连接mysql，括号内是服务器地址, 端口号, 用户名，密码，存放数据的数据库
     conn = pymysql.connect( host='139.219.8.186',
                         port=3306,
@@ -84,39 +85,41 @@ def zhuce():
 #         return render_template("zhuye3.html")
 #
 #
-# @app.route("/denglu",methods=["GET"])
-# def denglu():
-#     # 获取前端提交的用户名和密码
-#     uname = request.args.get("uname")
-#     email = request.args.get("email")
-#     password1 = request.args.get("password1")
-#     password2 = request.args.get("password2")
-#     print(uname,email,password1,password2)
-#     # 到数据库中进行校验
-#     conn = pymysql.connect(
-#         host='139.219.8.186',
-#         port=3306,
-#         user='root',
-#         password='123456',
-#         database='facecard',
-#         charset="utf8"
-#     )
-#     print(conn)
-#     cls = conn.cursor()
-#     # 前端传递的数据，进行到数据库中进行验证
-#     cls.execute("select * from myuser where uname=%s and email=%s and password1=%s and password2=%s", [uname,email,password1,password2])
-#     result = cls.fetchone()
-#     if result is None:
-#         # 用户名和密码不对
-#         flash("uname or password1  not  true")
-#         return render_template("login_register.html")
-#     else:
-#         cls.execute("select * from myuser ")
-#         result = cls.fetchall()
-#         conn.close()
-#         return render_template("zhuye3.html", users=result)
-#
-#
+@app.route("/denglu",methods=["GET"])
+def denglu():
+    print("hello_denglu")
+    # 获取前端提交的用户名和密码
+    uname = request.args.get("uname")
+    email = request.args.get("email")
+    password1 = request.args.get("password1")
+    password2 = request.args.get("password2")
+    print(uname,email,password1,password2)
+    # 到数据库中进行校验
+    conn = pymysql.connect(
+        host='139.219.8.186',
+        port=3306,
+        user='root',
+        password='123456',
+        database='facecard',
+        charset="utf8"
+    )
+    print(conn)
+    cls = conn.cursor()
+    # 前端传递的数据，进行到数据库中进行验证
+    cls.execute("select * from myuser where uname=%s and email=%s and password1=%s and password2=%s", [uname,email,password1,password2])
+    result = cls.fetchone()
+    if result is None:
+        # 用户名和密码不对
+        return render_template("login_register.html")
+        flash("uname or password1  not  true")
+        return render_template("personal.html")
+    else:
+        cls.execute("select * from myuser ")
+        result = cls.fetchall()
+        conn.close()
+        return render_template("personal.html", users=result)
+
+
 # #接收前端注册界面提交的数据
 # @app.route("/sousuo_id",methods=["GET"])
 # def sousuo_id():
@@ -215,7 +218,6 @@ def zhuce():
 # -*- coding: utf-8 -*-
 
 
-
 # currPath = sys.path[0]
 
 # 人脸识别模型
@@ -256,14 +258,17 @@ class VideoCamera(object):
         return jpeg.tobytes()
 @app.route('/')
 def zhuye():
+    print("hello_zhuye")
     return render_template('index.html')
-@app.route('/season')
+@app.route("/season")
 def season():
-    return render_template('season.html')
+     print("hello_season")
+     return render_template('season.html')
 @app.route('/face')  # 主页
 def index():
-    # 具体格式保存在index.html文件中
-    return render_template('face.html')
+     print("hello_index")
+     # 具体格式保存在index.html文件中
+     return render_template('face.html')
 
 
 def gen(camera):
@@ -285,7 +290,7 @@ if __name__ == '__main__':
     http_server = WSGIServer(('127.0.0.1', 5000), app)
     print("* Running on http://127.0.0.1:5000/ ")
     http_server.serve_forever()
-    app.run()
+    app.run(debug=True)
     # app.run(debug=True)
 
 
