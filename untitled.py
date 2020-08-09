@@ -12,7 +12,7 @@ import cv2
 import sys
 import os
 import time #时间数据分析
-app = Flask(__name__, template_folder= r'D:/facecard/templates')
+app = Flask(__name__, template_folder= '../facecard/templates')
 #用户安全问题，设置key值，值随意给出，给的难道越大，破解与麻烦
 app.secret_key="13943662109"
 #这里是连接虚拟机数据库的代码
@@ -223,7 +223,7 @@ def denglu():
 # 人脸识别模型
 # face_cascade = cv2.CascadeClassifier(currPath+'\\haarcascade_frontalface_default.xml') # 默认模型
 # face_cascade = cv2.CascadeClassifier(currPath+'\\haarcascade_profileface.xml')         # 侧脸模型
-face_cascade = cv2.CascadeClassifier(r'D:/facecard/haarcascade_frontalface_alt2.xml')  # 正脸模型
+face_cascade = cv2.CascadeClassifier('../facecard/haarcascade_frontalface_alt2.xml')  # 正脸模型
 
 
 
@@ -260,6 +260,7 @@ class VideoCamera(object):
 def zhuye():
     print("hello_zhuye")
     return render_template('index.html')
+
 @app.route("/season")
 def season():
      print("hello_season")
